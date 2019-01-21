@@ -110,16 +110,10 @@ static char keyboardFrameBeginRectKey;
     if (!self.tableView) {
         self.tableView = [[UITableView alloc] initWithFrame:self.textFieldRectOnWindow style:UITableViewStylePlain];
         self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        self.tableView.backgroundColor = [UIColor colorWithRed:0/255.0 green:44/255.0 blue:78/255.0 alpha:1]; //LotteryDarkBlue
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.tableFooterView = [UIView new];
-    }
-    
-    if (!self.alphaView) {
-        self.alphaView = [[UIView alloc] initWithFrame:appDelegateWindow.bounds];
-        self.alphaView.userInteractionEnabled = true;
-        self.alphaView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
-        [appDelegateWindow addSubview:self.alphaView];
     }
     
     self.tableView.frame = self.textFieldRectOnWindow;
