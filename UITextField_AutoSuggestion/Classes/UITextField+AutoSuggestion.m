@@ -36,7 +36,7 @@ static char keyboardFrameBeginRectKey;
     if (loading) {
         if (!self.tableAlphaView) {
             self.tableAlphaView = [[UIView alloc] initWithFrame:self.tableView.bounds];
-            self.tableAlphaView.backgroundColor = [UIColor whiteColor];
+            self.tableAlphaView.backgroundColor = [UIColor colorWithRed:0/255.0 green:44/255.0 blue:78/255.0 alpha:1]; //LotteryDarkBlue
             [self.tableView addSubview:self.tableAlphaView];
             
             self.spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 24, 24)];
@@ -104,7 +104,7 @@ static char keyboardFrameBeginRectKey;
     
     if (!self.tableContainerView) {
         self.tableContainerView = [UIView new];
-        self.tableContainerView.backgroundColor = [UIColor whiteColor];
+        self.tableContainerView.backgroundColor = [UIColor colorWithRed:0/255.0 green:44/255.0 blue:78/255.0 alpha:1]; //LotteryDarkBlue
     }
     
     if (!self.tableView) {
