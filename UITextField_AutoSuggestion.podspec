@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 This is a category for UITextField which provides auto suggestion feature to any instance.
                        DESC
 
-  s.homepage         = 'https://github.com/chika-kasymov/UITextField_AutoSuggestion'
+  s.homepage         = 'https://github.com/rose-digital/UITextField_AutoSuggestion'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kassymov Shyngys' => 'chika.kasymov@gmail.com' }
